@@ -7,4 +7,8 @@ function normalizeURL(url: string) {
   return fullPath;
 }
 
+function getURLsFromHTML(html: string, baseURL: string) {
+	
+}
+
 export { normalizeURL };
