@@ -1,0 +1,25 @@
+{
+  "name": "web-scraper",
+  "version": "1.0.0",
+  "description": "A web scraper written in TypeScript",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "tsx ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shantdashjian/web-scraper.git"
+  },
+  "author": "Shant Dashjian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shantdashjian/web-scraper/issues"
+  },
+  "homepage": "https://github.com/shantdashjian/web-scraper#readme",
+  "devDependencies": {
+    "@types/node": "^24.0.13",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
