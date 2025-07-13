@@ -1,14 +1,10 @@
-function normalizeURL(url: string): string {
-  if (url.startsWith("https://")) {
-    url = url.substring(8);
+function normalizeURL(url: string) {
+  const urlObj = new URL(url);
+  let fullPath = `${urlObj.host}${urlObj.pathname}`;
+  if (fullPath.slice(-1) === "/") {
+    fullPath = fullPath.slice(0, -1);
   }
-  if (url.startsWith("http://")) {
-    url = url.substring(7);
-  }
-  if (url.endsWith("/")) {
-    url = url.substring(0, url.length - 1);
-  }
-  return url;
+  return fullPath;
 }
 
 export { normalizeURL };

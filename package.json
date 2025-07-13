@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "tsx ./src/index.ts",
-    "test": "vitest run --watch"
+    "test": "vitest run"
   },
   "repository": {
     "type": "git",
